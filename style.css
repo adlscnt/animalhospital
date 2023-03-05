@@ -1,0 +1,541 @@
+.white { background-color: #ffffff; }
+.navy { background-color: #0169AB; }
+.navytransparent { background-color: #016aab65;}
+.blue { background-color: #014975; }
+.darkblue { background-color: #244E66;}
+
+
+
+
+html,body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 340px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .container {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+
+}
+.img  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+nav ul li a {
+    color: #0169AB;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+ul li:hover a {
+    color: #013b60;
+}
+nav ul li.dropdown {
+    position: relative;
+    display: flex;
+    height: 70px;
+}
+nav ul.dropdownmenu {
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 35px;
+    padding-left: 10px;
+    width: 175px;
+}
+nav ul li.dropdown:hover > ul.dropdownmenu, nav ul.dropdownmenu:hover {
+    display: block;
+}
+nav ul .dropdownmenu li {
+    display: block;
+    float: none;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header .burger {
+    display: block;
+    margin-right: 10px;
+}
+header .burger span {
+    background-color: #0169AB;;
+    width: 25px;
+    height: 2px;
+    margin-bottom: 7px;
+    display: block;
+}
+
+
+
+
+
+/*TOP MID PAGE*/
+section {
+    width: 100%;
+    height: auto;
+}
+section.featured .container {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-image: url(images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+section.featured .container h1 {
+    color: white;
+    font-size: 45px;
+    margin-left: 20px;
+    text-shadow: 1px 1px 8px black;
+}
+section.featured h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+
+/*BOTTOM MID PAGE*/
+section.secondary .grid-child h3 {
+    font-size: 30px;
+    text-align: center;
+}
+section.secondary .grid-child p {
+    font-size: 20px;
+    text-align: center;
+}
+section.secondary .grid-child h2 {
+    color:#0169AB;
+    text-align: center;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+section.secondary .grid-child p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.grid-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 90%;
+   
+}
+.grid-child {
+    width: 100%;
+    margin-bottom: 50px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin-left: 100px;
+}
+section.secondary .maincontent {
+    margin-top: 20px;
+    padding-top: 30px;
+    background-color: rgba(255, 0, 0, 0.211);
+}
+section.secondary .container {
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    color: white;
+}
+section.secondary .item img {
+    width: 300px;
+    height: auto;
+}
+section.secondary .mainitem img {
+    width: 100px;
+    height: 250px;
+    margin-bottom: -200px;
+}
+section.secondary .maincontainer {
+    margin-top: -150px;
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+footer .container {
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+footer .container h2 {
+    text-align: center;
+}
+footer .container p {
+    text-align: center;
+}
+footer .container p a {
+    color: white;
+}
+footer .container h4 {
+    text-align: center;
+}
+
+
+
+
+
+/*SOCIALS*/
+.fa {
+    padding: 15px;
+    font-size: 20px;
+    width: 5px;
+    height: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    line-height: 8px;
+}
+.fa-instagram {
+    background: url(images/instagram.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    line-height: 8px;
+}
+
+
+
+/*SERVICES CSS*/
+header h1 {
+    font-size: 50px;
+    color: white;
+}
+section.featured .services {
+    position: static;
+}
+section.secondary .services_content {
+    text-align: center;
+    color: #16303e;
+    font-size: 20px;
+}
+section.secondary .item h2 {
+    color: #244E66;
+    font-size: 30px;
+}
+section.secondary .item p {
+    color: #244E66;
+}
+section.secondary .item a {
+    color:#0169AB;
+}
+section.secondary .servecontent {
+    text-align: center;
+    color: #16303e;
+    margin-top: 50px;
+    font-size: 20px;
+    background-color: #016aab24;
+    margin-top: -25px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+section.secondary .servecontent p {
+    font-size: 25px;
+}
+
+
+
+/*CAT AND DOG CARE CSS*/
+section.secondary .cndcontent {
+    text-align: center;
+    color: #16303e;
+    margin-top: 50px;
+    font-size: 20px;
+    background-color: #016aab24;
+    margin-top: -25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+section.secondary h4 {
+    color:#0169AB;
+    font-size: 30px;
+}
+section.secondary .cndcontent p {
+    font-size: 25px;
+}
+
+section.secondary .container .item p {
+    font-size: 20px;
+}
+
+
+
+
+
+/*TELEHEALTH CSS*/
+section.secondary .telecontent {
+    text-align: center;
+    color: #16303e;
+    font-size: 20px;
+    margin-top: -25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+section.secondary .telecontent h3 {
+    color:#0169AB;
+    font-size: 30px;
+}
+section.secondary .telecontent {
+    background-color: #016aab24;
+}
+section.secondary .telecontent p{
+    font-size: 25px;
+}
+footer .telecontainer {
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: auto;
+    margin-top: 0px;
+}
+footer .telecontainer h2 {
+    text-align: center;
+}
+footer .telecontainer p {
+    text-align: center;
+}
+footer .telecontainer h4 {
+    text-align: center;
+}
+footer .telecontainer p a {
+    color: white;
+}
+
+
+/*EMERGENCY CSS*/
+section.secondary .emergencycontent {
+    text-align: center;
+    color: #16303e;
+    font-size: 20px;
+    margin-top: -25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #016aab24;
+}
+section.secondary .emergencycontent a {
+    color: #0169AB;
+}
+section.secondary .emergencycontent p {
+    font-size: 25px;
+}
+section.secondary .emergencycontent h2 {
+    font-size: 30px;
+}
+footer .emergencycontainer {
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: auto;
+    margin-top: 0px;
+}
+footer .emergencycontainer a {
+    color: white;
+}
+
+
+
+/*PRACTICES CSS*/
+footer .practicecontainer {
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: auto;
+    margin-top: 0px;
+}
+footer .practicecontainer a {
+    color: white;
+}
+
+
+
+
+/*MEET THE TEAM CSS*/
+section.secondary .titlecontainer h1 {
+    font-size: 30px;
+    margin-left: 50px;
+    color:#0169AB;
+}
+section.secondary .teamitem img {
+    width: 200px;
+    height: 300px;
+}
+section.secondary .teamitem h2 {
+    color: #244E66;
+    font-size: 30px;
+}
+section.secondary .teamitem p {
+    color: #244E66;
+}
+section.secondary .teamitem a {
+    color:#0169AB;
+}
+
+
+
+/*RESOURCES CSS*/
+section.resources .resourcescontent h3 {
+    font-size: 30px;
+    margin-left: 50px;
+    color:#0169AB;
+}
+section.resources .resourcescontent ul li a {
+    font-size: 20px;
+    color:#16303e;
+    margin-left: 75px;
+}
+section.resources .resourcescontent ul {
+    list-style: none;
+}
+
+
+
+/*CONTACT CSS*/
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  input[type=submit] {
+    background-color:#014975;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color:#002e4a;
+  }  
+  .contactcontainer {
+    border-radius: 5px;
+    padding: 75px;
+  }
+
+
+
+@media screen and (min-width: 769px) {
+    .container {
+        width: 800px;
+    }
+    nav {
+        display: block;
+    }
+    header .burger {
+        display: none;
+    }
+    section.featured .container {
+        height: 300px;
+    }
+    section.secondary .item img {
+        width: 250px;
+    }
+    section.secondary .mainitem img {
+        width: 250px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 1000px;
+    }
+    section.featured .container {
+        height: 400px;
+    }
+    section.secondary .item img {
+        width: 300px;
+    }
+    section.secondary .mainitem img {
+        width: 300px;
+    }
+}
+@media screen and (min-width: 1408px) {
+    .container {
+        width: 1200px;
+    }
+    section.secondary .item img {
+        width: 375px;
+    }
+    section.secondary .mainitem img {
+        width: 375px;
+    }
+}
+
